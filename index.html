@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vintage Letter Writing</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Vintage Letter Writing</h1>
-        <textarea id="letterContent" placeholder="Write your letter here..."></textarea>
-        <div class="controls">
-            <button onclick="previewLetter()">Preview Letter</button>
+        <div class="desk">
+            <div class="letter">
+                <textarea id="letterContent" placeholder="Write your letter here..."></textarea>
+            </div>
+            <div class="customization-panel">
+                <button onclick="customizePaper()">Customize Paper</button>
+                <button onclick="chooseFont()">Choose Font</button>
+                <button onclick="addSeal()">Add Seal</button>
+                <button onclick="previewLetter()">Preview</button>
+                <button onclick="sendLetter()">Send</button>
+                <button onclick="attachImage()">Attach Image</button>
+                <button onclick="chooseContainer()">Choose Container</button>
+            </div>
         </div>
-        <div id="letterPreview" class="letter-preview"></div>
     </div>
-    <script src="script.js"></script>
+    <div id="previewModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="previewContent"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

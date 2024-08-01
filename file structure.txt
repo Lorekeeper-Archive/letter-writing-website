@@ -1,0 +1,12 @@
+letter-writing-website/
+│
+├── index.html
+├── styles.css
+├── scripts.js
+├── assets/
+│   ├── vintage_paper.jpg
+│   ├── old_paper.jpg
+│   ├── seal.png
+│   ├── wooden_desk.jpg
+│   ├── wax.png
+│   └── ...
